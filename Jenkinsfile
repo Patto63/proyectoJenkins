@@ -14,7 +14,7 @@ pipeline{
         stage('Clonar Repositorio'){
             steps{
                 script{
-                    git 'https://github.com/Patto63/proyectoJenkins.git'
+                    git branch: 'main', url: 'https://github.com/Patto63/proyectoJenkins.git'
                 }
             }
         }
